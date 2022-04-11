@@ -1,10 +1,14 @@
 public class TipeData {
     public static void main(String[] args) { // method atau fungsi
         // Byte (-128 - 127)
-        byte angka;
+        byte angka = 0;
         byte angkaByte = 5;
         byte angka1 = 2, angka2 = 3;
 
+        System.out.println("Nilai angkaByte: " + angkaByte);
+        System.out.println("Nilai angka: " + angka);
+        System.out.println("Nilai angka1: " + angka1);
+        System.out.println("Nilai angka2: " + angka2);
         System.out.println("Nilai angkaByte: " + angkaByte);
 
         // re assign
