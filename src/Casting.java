@@ -10,6 +10,9 @@ public class Casting {
         System.out.printf("Nilai floatA: %f\n", floatA);
         System.out.printf("Nilai intA: %d\n", intA);
 
+        // kalo bilangan desimal ke bulat harus di manual casting
+        // kalo udah sesama jenis bilangan sudah auto casting
+
         char charB = 'Z';
         int intB = charB; // auto casting
         System.out.printf("Nilai charB: %c\n", charB);
