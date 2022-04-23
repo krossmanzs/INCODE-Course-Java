@@ -10,7 +10,7 @@ public class Switch {
         //  - jika semua case tidak terpenuhi maka lanjut ke default case sebagai
         //      default case yang akan dijalankan
 
-        int angka = 20;
+        int angka = 30;
 
         System.out.println("==== switch");
 

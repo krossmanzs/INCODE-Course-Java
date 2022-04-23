@@ -16,7 +16,11 @@ public class ForLoop {
         // programmer biasanya pakai variabel
         // i,j,k
 
-        for(int i = 0;i < 10; i++) { // i = 10
+        for (int i = 0; i < 10; i++) { // i = 10
+            System.out.println("Angka: " + i);
+        }
+
+        for (int i = 0; i < 10; i++) { // i = 10
             System.out.println("Angka: " + i);
         }
 
@@ -24,18 +28,80 @@ public class ForLoop {
 
         // membuat segitiga dengan ukuran 5
         int size = 5;
-        for(int i = 1; i <= size; i++) {
-            for(int j = 1; j <= i; j++) {
+        for (int i = 1; i <= size; i++) { // 1-5
+            for (int j = 1; j <= i; j++) { // 1-i
                 System.out.printf("%d ", j);
             }
             System.out.println(); // new line
         }
 
+        /*
+        5 4 3 2 1
+        5 4 3 2
+        5 4 3
+        5 4
+        5
+         */
+
         System.out.println();
 
-        // stackoverflow error
-//        for (int i = 0; i < 10; i--) {
-//            System.out.println(i);
+        // 5-1
+        for (int i = 1; i <= 5; i++) { // 1-5
+            //  5-i
+            for(int j = 5; j >= i; j--) { // 5-i || 5-5, 5-4, 5-3, 5-2, 5-1
+                System.out.printf("%d ", j);
+            }
+            System.out.println();
+        }
+
+
+        System.out.println();
+
+        size = 5;
+        for (int i = 5; i >= 1; i--) { // 5 - 1
+            for (int j = 5; j >= i; j--) {
+                System.out.printf("%d ", j);
+            }
+            System.out.println(); // new line
 //        }
+        }
+
+        System.out.println();
+
+        for(int i = 5; i >= 1; i--) {
+            for(int j = 1; j <= i; j++) {
+                System.out.printf("*");
+            }
+            System.out.println();
+        }
+
+        System.out.println();
+
+        /*
+        size = 5
+
+         */
+
+        /*
+            *
+           **
+          ***
+         ****
+        *****
+         */
+
+        for(int i = 1; i <= 5; i++) {
+            // spasi
+            for (int j = 5; j >= i + 1; j--) {
+                System.out.printf(" ");
+            }
+
+            // bintang
+            for(int k = 1; k <= i; k++) {
+                System.out.printf("*");
+            }
+
+            System.out.println();
+        }
     }
 }

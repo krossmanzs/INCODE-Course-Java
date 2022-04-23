@@ -13,7 +13,7 @@ public class Casting {
         // kalo bilangan desimal ke bulat harus di manual casting
         // kalo udah sesama jenis bilangan sudah auto casting
 
-        char charB = 'Z';
+        char charB = 'B';
         int intB = charB; // auto casting
         System.out.printf("Nilai charB: %c\n", charB);
         System.out.printf("Nilai intB: %d\n", intB);

@@ -9,7 +9,7 @@ public class IfElse {
 
         boolean capek = false;
 
-        if(capek) { // true
+        if(capek) { // true || capek == true
             System.out.println("Sedang tidur");
         } else {
             System.out.println("Sedang bekerja");

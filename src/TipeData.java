@@ -5,11 +5,14 @@ public class TipeData {
         byte angkaByte = 5;
         byte angka1 = 2, angka2 = 3;
 
+        byte angka129 = (byte)129;
+
         System.out.println("Nilai angkaByte: " + angkaByte);
         System.out.println("Nilai angka: " + angka);
         System.out.println("Nilai angka1: " + angka1);
         System.out.println("Nilai angka2: " + angka2);
         System.out.println("Nilai angkaByte: " + angkaByte);
+        System.out.println("Nilai angka129: " + angka129);
 
         // re assign
         angkaByte = 11;
@@ -38,6 +41,7 @@ public class TipeData {
         // char (Value dari ascii)
         char karakter = 'G';
         System.out.println("Nilai karakter: " + karakter);
+        System.out.println("Kode karakter: " + (int)karakter);
 
         // String (kumpulan char)
         String kata = "cindol";
