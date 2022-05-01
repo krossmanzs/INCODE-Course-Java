@@ -37,5 +37,31 @@ public class UserInput {
         // Tugas
         // dapetin informasi kita kaya nama, umur, jenis kelamin, kelas, tanggal lahir
         // tampilin semua
+
+        // JAWABAN GARLAND (kurang tepat dan sudah dibenerin ama linuk)
+        Scanner Power = new Scanner(System.in);
+        System.out.println("What's Your Name?");
+        System.out.print("My Name: ");
+        String Name = Power.nextLine();
+        System.out.println("How's your age?");
+        System.out.print("My Age: ");
+        int Age = Power.nextInt();
+        System.out.println("What's Your Gender?");
+        System.out.print("My Gender: ");
+        Power = new Scanner(System.in); // refresh scanner
+        String Gender = Power.nextLine();
+        System.out.println("What's Your Class now?");
+        System.out.print("Class: ");
+        Power = new Scanner(System.in);
+        String Class = Power.nextLine();
+        System.out.println("When is your birthday?");
+        System.out.print("My Birthday (ddmmyy): ");
+        String Date = Power.nextLine();
+
+        System.out.println("Thank You for Your Feedback. " +
+                "So You are " + Name + " and your age is " +
+                Age + ", Your gender is " + Gender +
+                ". You're Currently on " + Class + " and Your Birthday's on "
+                + Date);
     }
 }
