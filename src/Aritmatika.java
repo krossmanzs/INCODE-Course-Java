@@ -5,8 +5,8 @@ public class Aritmatika {
     // * = kali
     // / = bagi
     // % = modulus
-    // ++ = increment
-    // -- = decrement
+    // ++ = increment -> + 1
+    // -- = decrement -> - 1
 
     public static void main(String[] args) {
         int a = 5;

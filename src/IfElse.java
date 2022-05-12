@@ -9,7 +9,7 @@ public class IfElse {
 
         boolean capek = false;
 
-        if(capek) { // true || capek == true
+        if(capek) { // false || capek == true
             System.out.println("Sedang tidur");
         } else {
             System.out.println("Sedang bekerja");
@@ -56,9 +56,9 @@ public class IfElse {
             System.out.println("komparasi diatas salah semua");
         }
 
-        if(1 < 2) {
+        if(1 < 2) { // true
             System.out.println("1 kurang dari 2");
-        } if (3 == 3) {
+        } if (3 == 3) { // true
             System.out.println("3 sama dengan 3");
         } else {
             System.out.println("komparasi diatas salah semua");

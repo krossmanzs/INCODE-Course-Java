@@ -21,5 +21,16 @@ public class ArrayMultiDimensi {
         int c[][][] = {{{1,2,3}, {7,8,9}},{{4,5,6}}};
         System.out.println(c[0][0][2]); // garland, dadang, michael
         System.out.println(c[0][1][2]); // garland, dadang, michael
+
+        System.out.println();
+        int z[][][] = {{{3,9},{4,10}},{{5, 6}}};
+
+        for(int i = 0; i < z.length; i++) {
+            for(int j = 0; j < z[i].length; j++) {
+                for(int k = 0; k < z[i][j].length; k++) {
+                    System.out.printf("z[%d][%d][%d]: %d\n", i,j,k,z[i][j][k]);
+                }
+            }
+        }
     }
 }
