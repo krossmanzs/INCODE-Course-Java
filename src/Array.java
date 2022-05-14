@@ -33,6 +33,12 @@ public class Array {
 
         int[] c;
 //        {}
+
+        // ERROR HAVE NOT BEEN INITIALIZED
+//        for(int i = 0; i < c.length; i++) {
+//            System.out.printf("Nilai c[%d]: %d\n", i, c[i]);
+//        }
+
         c = new int[]{1, 2, 3};
         for(int i = 0; i < c.length; i++) {
             System.out.printf("Nilai c[%d]: %d\n", i, c[i]);

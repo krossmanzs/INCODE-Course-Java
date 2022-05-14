@@ -14,6 +14,9 @@ public class LogicalBoolean {
         System.out.println("=========== && (dan)");
         System.out.printf("true && true = %s\n", (true && true));
         System.out.printf("true && true && false = %s\n", (true && true && false));
+        // true && true && false
+        // true && false
+        // false
 
         System.out.println("\n=========== || (atau)");
         System.out.printf("true || false = %s\n", (true || false));
@@ -25,5 +28,10 @@ public class LogicalBoolean {
         System.out.println("\n===========");
         System.out.printf("!(true != false) && (true) || false && false || (true || false) = %s\n",
                 (!(true != false) && (true) || false && false || (true || false)));
+        // !true && true || false && false || true
+        // false || false && false || true
+        // false && false || true
+        // false || true
+        // true
     }
 }

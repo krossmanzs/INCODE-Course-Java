@@ -6,6 +6,7 @@ public class Casting {
         // - auto casting
 
         float floatA = 12.8f;
+        // hard-coded
         int intA = (int) floatA; // manual casting
         System.out.printf("Nilai floatA: %f\n", floatA);
         System.out.printf("Nilai intA: %d\n", intA);
@@ -22,5 +23,10 @@ public class Casting {
         long longA = (long) byteA; // manual casting
         System.out.printf("Nilai byteA: %d\n", byteA);
         System.out.printf("Nilai longA: %d\n", longA);
+
+        byte byteC = 55;
+        short shortC = byteC;
+        System.out.printf("Nilai byteC: %d\n", byteC);
+        System.out.printf("Nilai shortC: %d\n", shortC);
     }
 }

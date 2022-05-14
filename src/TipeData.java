@@ -16,7 +16,7 @@ public class TipeData {
 
         // re assign
         angkaByte = 11;
-        System.out.println("Nilai angkaByte: " + angkaByte);
+        System.out.println("Nilai angkaByte: " + angkaByte); // append string
 
         // Int (-2,147,583,684 ke 2,147,483,647)
         int angkaInt = 0;
@@ -31,7 +31,7 @@ public class TipeData {
         double angkaDouble = 23.45d; // (float) 23.45
         System.out.println("Nilai angkaDouble: " + angkaDouble);
 
-        // boolean (value antara true atau false)
+        // boolean (value antara true = 1 atau false = 0)
         boolean booleanTrue = true;
         boolean booleanFalse = false;
 
@@ -44,7 +44,9 @@ public class TipeData {
         System.out.println("Kode karakter: " + (int)karakter);
 
         // String (kumpulan char)
-        String kata = "cindol";
-        System.out.println("Nilai kata: " + kata);
+        String kata1 = "Nilai kata: ";
+        String kata2 = "cindol";
+        System.out.println(kata1 + kata2);
+//        System.out.println("Nilai kata: " + "cindol");
     }
 }
