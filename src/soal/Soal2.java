@@ -8,6 +8,7 @@ public class Soal2 {
             *****
              *****
               *****
+               *****
          */
 
         // SILAHKAN BUAT KODENYA MULAI BARIS DIBAWAH INI!!
