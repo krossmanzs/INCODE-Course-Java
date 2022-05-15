@@ -1,6 +1,12 @@
 public class Fungsi {
     // Fungsi / Method
     // adalah sebutan untuk fungsi yang mengembalikan nilai.
+
+    // tipe data yang mengembalikan nilai (return):
+    // semua tipe data primitif(byte, short, long, dll)
+
+    // tipe data yang tidak mengembalikan nilai (non-return):
+    // void
     public static void main(String[] args) {
         int a = 1;
         int b = 2;
@@ -16,6 +22,7 @@ public class Fungsi {
         print(String.valueOf(jumlah2));
         print("Halo nama saya adalah linux");
         print("L segitiga dengan a=4 dan t=6 : " + hitungLuasSegitiga(8,2));
+        print("L lingkaran dengan r=7 : " + hitungLuasLingkaran(7));
 
         printMenu();
     }
@@ -25,12 +32,23 @@ public class Fungsi {
         return total;
     }
 
+    int pengurangan(int angka1, int angka2) {
+        int total = 0;
+        total = angka1 - angka2;
+        return total;
+    }
+
     static void print(String message) {
         System.out.println(message);
     }
 
     static float hitungLuasSegitiga(int a, int t) {
         return (a * t) / 2f;
+    }
+
+    static float hitungLuasLingkaran(float r) {
+        // phi*r^2
+        return (22f/7f) * (r * r);
     }
 
     static void printMenu() {

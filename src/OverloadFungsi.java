@@ -6,6 +6,7 @@ public class OverloadFungsi {
         print("Halo nama saya Linux");
         print("Halo nama saya Linux", true);
         print();
+        print(new String[]{"Jojo, Linux, Metiw"});
     }
 
     static void print(String message) {
@@ -25,5 +26,12 @@ public class OverloadFungsi {
 
     static void print() {
         print("Halo nama saya Udin");
+    }
+
+    static void print(String[] animals) {
+        for (String animal : animals) {
+            System.out.print(animal);
+        }
+        System.out.println();
     }
 }

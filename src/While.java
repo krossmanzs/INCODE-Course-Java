@@ -3,6 +3,8 @@ public class While {
         int i = 0;
 
         while(i <= 5) {
+            String kata = "Halo";
+            System.out.println(kata);
             i++;
         }
 
