@@ -22,10 +22,11 @@ public class ForLoop {
 
         System.out.println();
 
+        // Nesting Loop
         // membuat segitiga dengan ukuran 5
         int size = 5;
-        for (int i = 1; i <= size; i++) { // 1-5
-            for (int j = 1; j <= i; j++) { // 1-i
+        for (int i = 1; i <= size; i++) { // 1 - 5 (5 kali looping)
+            for (int j = 1; j <= i; j++) { // 1-i (i kali looping)
                 System.out.printf("%d ", j);
             }
             System.out.println(); // new line
@@ -44,7 +45,7 @@ public class ForLoop {
         // 5-1
         for (int i = 1; i <= 5; i++) { // 1-5
             //  5-i
-            for(int j = 5; j >= i; j--) { // 5-i || 5-5, 5-4, 5-3, 5-2, 5-1
+            for(int j = 5; j >= i; j--) { // 5-i (5-5)
                 System.out.printf("%d ", j);
             }
             System.out.println();
@@ -64,8 +65,8 @@ public class ForLoop {
 
         System.out.println();
 
-        for(int i = 5; i >= 1; i--) {
-            for(int j = 1; j <= i; j++) {
+        for(int i = 5; i >= 1; i--) { // 5-1
+            for(int j = 1; j <= i; j++) { // 1-i (1-1)
                 System.out.printf("*");
             }
             System.out.println();
@@ -86,15 +87,14 @@ public class ForLoop {
         *****
          */
 
-        // i = 3 ||
-        for(int i = 1; i <= 5; i++) {
+        for(int i = 1; i <= 5; i++) { // 1-5
             // spasi
-            for (int j = 5; j >= i + 1; j--) { // 54 - 2 perulangan - print 2 buah _
-                System.out.printf("_");
+            for (int j = 5; j >= (i + 1); j--) { // 5-(i+1) 5-3
+                System.out.printf(" ");
             }
 
             // bintang
-            for(int k = 1; k <= i; k++) { // 123 - 3 perulangan - print 3 buah *
+            for(int k = 1; k <= i; k++) { // 1-i 1-5
                 System.out.printf("*");
             }
 
@@ -176,6 +176,18 @@ public class ForLoop {
                 System.out.print(j + " ");
             }
             System.out.println();
+        }
+
+        System.out.println();
+
+        int[][] matrix = {{1,2,3},{55,4,2},{4,6,3}};
+
+        for(int i = 0; i < matrix.length; i++) {
+            System.out.print("[");
+            for(int j = 0; j < matrix[i].length;j++) {
+                System.out.printf("%d,",matrix[i][j]);
+            }
+            System.out.println("]");
         }
     }
 }

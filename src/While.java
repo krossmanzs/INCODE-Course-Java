@@ -20,8 +20,8 @@ public class While {
         // kita tambah penduduk sampai 100
         // jika belum penuh maka tampilkan banyak penduduk saat itu
 
-        int penduduk = 0;
-        int maxPenduduk = 5;
+        int penduduk = 1;
+        int maxPenduduk = 100;
 
         // ketika penduduk belum penuh
         while(penduduk <= maxPenduduk) {
@@ -29,7 +29,7 @@ public class While {
             System.out.printf("Penduduk saat ini: %d\n", penduduk);
 
             // kita tambah penduduknya
-            penduduk++; // penduduk = penduduk + 1
+            penduduk *= 2; // penduduk = penduduk + 1
 
             // kita tampilin penduduk setelah ditambah
             System.out.printf("Penduduk setelah ditambah: %d\n\n", penduduk);

@@ -7,6 +7,12 @@ public class IfElse {
         // else (lainnya)
         // kondisi dimana jika if tidak terpenuhi (false)
 
+        if(true) {
+            System.out.println("keluarkan if");
+        } else {
+            System.out.println("keluarkan else");
+        }
+
         boolean capek = false;
 
         if(capek) { // false || capek == true

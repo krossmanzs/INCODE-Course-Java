@@ -5,9 +5,9 @@ public class LogicalBoolean {
     // +----------+-------------+---------------------------------------------------------------+--------------------+
     // | operator |    nama     |                          penjelasan                           |     penggunaan     |
     // +----------+-------------+---------------------------------------------------------------+--------------------+
-    // | &&       | Logical and | Mengembalikan nilai true jika kedua pernyataan benar          | x < 5 &&  x < 10   |
-    // | ||       | Logical or  | Mengembalikan nilai true jika salah satu pernyataan benar     | x < 5 || x < 4     |
-    // | !        | Logical not | Membalikkan hasilnya, mengembalikan false jika hasilnya benar | !(x < 5 && x < 10) |
+    // | &&       | Logical and | Mengembalikan nilai true jika kedua pernyataan benar          | 1 < 5 &&  2 < 10   | true && true = true
+    // | ||       | Logical or  | Mengembalikan nilai true jika salah satu pernyataan benar     | 2 < 5 || 6 < 4     | true || false = true
+    // | !        | Logical not | Membalikkan hasilnya, mengembalikan false jika hasilnya benar | !(1 < 5 && 2 < 10) | !(true) = false
     // +----------+-------------+---------------------------------------------------------------+--------------------+
 
     public static void main(String[] args) {
