@@ -24,6 +24,9 @@ public class Soal2 {
         System.out.println();
         linux();
         System.out.println();
+        cindy();
+        System.out.println();
+        garland();
     }
 
     private static void dadang() {
@@ -111,6 +114,33 @@ public class Soal2 {
             for (int j = 1; j <= bigchungus; j++) {
                 System.out.print("*");
             }
+            System.out.println();
+        }
+    }
+
+    private static void cindy() {
+        System.out.println("Cindy");
+        for (int i = 0; i < 5; i++) {
+            System.out.printf("*** \n");
+
+            for (int j = 5; j >= i + 1; j--)
+                System.out.printf("_");
+        }
+    }
+
+    private static void garland() {
+        System.out.println("\nGarland");
+        for(int i = 0; i < 5; i++) { // 0-4 (5 looping)
+            // spasi
+            for(int j = 0; j < i; j++) { // 0-3 (4 looping)
+                System.out.print(" ");
+            }
+
+            // bintang
+            for(int k = 1; k <= 5; k++) { // 0-4 (5 kali looping)
+                System.out.print("*");
+            }
+
             System.out.println();
         }
     }

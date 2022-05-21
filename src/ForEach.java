@@ -4,14 +4,32 @@ public class ForEach {
     public static void main(String[] args) {
         String animals[] = {"Kucing", "Anjing", "Kecoak Goreng", "Tikus"};
 
-        for(int i = 0; i < animals.length; i++) {
+        for(int i = 0; i < animals.length; i++) { // 0 - 3 (4 kali looping)
             System.out.println(animals[i]);
         }
 
         System.out.println();
 
+        for(int i = 0; i < animals.length; i++) {
+            if(i % 2 != 0) {
+                System.out.print(animals[i] + ",");
+            }
+        }
+
+        for (int j = animals.length-1; j >= 0; j--) {
+            if(j % 2 == 0) {
+                System.out.print(animals[j] + ",");
+            }
+        }
+
+        System.out.println();
+
+        // anjing, tikus, kecoak goreng, kucing
+
+        System.out.println();
+
         // for each
-//        for (type var : array) {
+//        for (type var_name : array) {
 //            statements using var;
 //        }
 
@@ -24,7 +42,7 @@ public class ForEach {
         int b[] = {1,2,3,4,4,5,3,34,5,34,12,3,21,4,23};
 
         for (int angka : b) {
-            if((angka % 2) == 0) { // bila angka mod 2 != 0 atau genap
+            if((angka % 2) == 0) { // bila angka mod 2 == 0 atau genap
                 System.out.printf("%d adalah bilangan genap\n", angka);
             } else {
                 System.out.printf("%d adalah bilangan ganjil\n", angka);

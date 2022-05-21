@@ -4,7 +4,8 @@ public class OverloadFungsi {
 
     public static void main(String[] args) {
         print("Halo nama saya Linux");
-        print("Halo nama saya Linux", true);
+        print("Halo nama saya metrung");
+        print("Halo garlan, saya angel", false);
         print();
         print(new String[]{"Jojo, Linux, Metiw"});
     }
@@ -28,9 +29,9 @@ public class OverloadFungsi {
         print("Halo nama saya Udin");
     }
 
-    static void print(String[] animals) {
-        for (String animal : animals) {
-            System.out.print(animal);
+    static void print(String[] arrays) {
+        for (String value : arrays) {
+            System.out.print(value);
         }
         System.out.println();
     }
