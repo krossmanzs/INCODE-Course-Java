@@ -3,8 +3,8 @@ package soal;
 import java.util.Scanner;
 
 public class Soal3 {
-    static String username = ""; // variabel username
-    static String password = ""; // variabel password
+    static String username = "";
+    static String password = "";
 
     public static void main(String[] args) {
         // Membuat sebuah program register-login
@@ -22,8 +22,6 @@ public class Soal3 {
         } else {
             loginUser();
         }
-
-        // JANGAN MENGUBAH KODE DIATAS!!
     }
 
     private static void loginUser() {
@@ -36,8 +34,24 @@ public class Soal3 {
          */
 
         String usernameInput, passwordInput;
-        // JANGAN MENGUBAH KODE DIATAS!!
 
+        do {
+            Scanner userInput = new Scanner(System.in);
+
+            System.out.println("\n====LOGIN");
+            System.out.print("Masukkan username: ");
+            usernameInput = userInput.nextLine();
+
+            System.out.print("Masukkan password: ");
+            passwordInput = userInput.nextLine();
+
+            if(!usernameInput.equals(username) || !passwordInput.equals(password)) {
+                System.out.println("Login gagal, pastikan username dan password benar!");
+            }
+        } while(!usernameInput.equals(username) || !passwordInput.equals(password));
+
+        System.out.println("Login berhasil!");
+        System.out.printf("Selamat datang, %s!", username);
     }
 
     private static void daftarUser() {
@@ -49,8 +63,16 @@ public class Soal3 {
         - Ketika 2 langkah diatas sudah selesai, panggil fungsi loginUser()
          */
 
-        // JANGAN MENGUBAH KODE DIATAS!!
+        System.out.println("User belum terdaftar! silahkan daftar terlebih dahulu!");
+        Scanner userInput = new Scanner(System.in);
+        System.out.print("Masukkan username: ");
+        username = userInput.nextLine();
 
+        System.out.print("Masukkan password: ");
+        password = userInput.nextLine();
+
+        System.out.println("Username berhasil di daftarkan!");
+        System.out.println("Silahkan login ulang.");
         loginUser();
     }
 
@@ -58,11 +80,14 @@ public class Soal3 {
         // fungsi untuk mengecek apakah user sudah terdaftar dengan cara:
 
         /*
-        - Mengembalikan nilai true jika id tidak kosong atau pw tidak kosong
+        - Mengambalikan nilai true jika id tidak kosong atau pw tidak kosong
         - Mengembalikan nilai false jika id kosong atau pw kosong
          */
 
-        // JANGAN MENGUBAH KODE DIATAS!!
-
+        if(!id.isEmpty() || !pw.isEmpty()) {
+            return true;
+        } else {
+            return false;
+        }
     }
 }
