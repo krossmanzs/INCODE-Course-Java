@@ -40,7 +40,7 @@ public class ExceptionHandling {
         } catch (Exception e) {
 //            e.printStackTrace();
 //            System.out.println(IME.getMessage());
-            System.out.println("Terdapat Null Pointer Exception!");
+            System.out .println("Terdapat Null Pointer Exception!");
         }
 
         int angka;
