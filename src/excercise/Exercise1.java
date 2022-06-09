@@ -99,12 +99,12 @@ public class Exercise1 {
         // masukkan koordinat
         System.out.printf("===== (%c)\n", huruf);
         int koordinat[] = getKoordinat(simbol);
-        int x = koordinat[1];
-        int y = koordinat[0];
+        int x = koordinat[0];
+        int y = koordinat[1];
 
         simbol[x][y] = huruf;
 
-        System.out.printf("Koordinat (%d,%d) diisi dengan %c\n", x, y, huruf);
+        System.out.printf("Koordinat (%d,%d) diisi dengan %c\n", y, x, huruf);
 
         return simbol;
     }
@@ -137,8 +137,8 @@ public class Exercise1 {
         int[] koordinat = new int[2];
 
         do {
-            koordinat[0] = askKoordinat("masukkan koordinat x(0-2) :");
-            koordinat[1] = askKoordinat("masukkan koordinat y(0-2) :");
+            koordinat[1] = askKoordinat("masukkan koordinat x(0-2) :");
+            koordinat[0] = askKoordinat("masukkan koordinat y(0-2) :");
 
             boolean adaNilai = cekKoordinat(koordinat, simbol);
 
